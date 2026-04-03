@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Dair — Bioengineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-name">Aurora Dair</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Bioengineering · UCSD · Class of 2026</p>
+      <h1 class="hero-name">Aurora<br><em>Dair</em></h1>
+      <p class="hero-desc">I design and build at the intersection of biology and hardware, from analog biosensor
+        circuits to prototype medical devices.</p>
+      <div class="hero-tags">
+        <span class="tag">Medical Devices</span>
+        <span class="tag">Analog Circuits</span>
+        <span class="tag">CAD & Prototyping</span>
+        <span class="tag">Signal Processing</span>
+        <span class="tag">Research</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <img src="assets/profile.jpg" alt="Aurora Dair" />
+      </div>
+      <div class="photo-decoration"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-label">About</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a Bioengineering student at UCSD specializing in Biotechnology, with hands-on experience spanning
+          <strong>medical device design</strong>, analog circuit development, and neuroscience research.
+        </p>
+        <p>I’m drawn to problems where hardware meets biology, where every design choice at the component level can
+          change what’s possible clinically. I like building things, iterating on them, and understanding exactly why
+          they work
+          or don't.</p>
+        <p>Currently seeking <strong>entry-level mechanical or hardware engineering roles</strong> where I can
+          contribute to device development and validation.</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat">
+          <div class="stat-number">3.7</div>
+          <div class="stat-label">GPA · Provost Honors</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1,800+</div>
+          <div class="stat-label">Problem sets graded as IA</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Patents reviewed at PreservaBio</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1,000+</div>
+          <div class="stat-label">WAPIs manufactured via WAPI program</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-label">Projects</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="section-title reveal" style="margin-bottom: 40px;">Selected work</div>
+
+    <div class="projects-grid">
+
+      <!-- PPG Featured -->
+      <div class="project-card featured reveal">
+        <div>
+          <div class="project-status">
+            <div class="status-dot"></div>
+            In Progress
+          </div>
+          <h3 class="project-title">Photoplethysmography Heart Rate Sensor</h3>
+          <p class="project-desc">Designing and comparing two PPG devices — an integrated MAX30102 sensor and a discrete
+            analog circuit built from scratch — to measure heart rate and study signal quality differences between
+            static and post-exercise conditions.</p>
+          <div class="project-skills">
+            <span class="skill-tag">EasyEDA</span>
+            <span class="skill-tag">Analog Circuit Design</span>
+            <span class="skill-tag">LM358 Op-Amp</span>
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Python / SciPy</span>
+            <span class="skill-tag">Signal Processing</span>
+          </div>
+          <ul class="project-highlights">
+            <li>Designed transimpedance amplifier with 1MΩ feedback for photodiode signal conditioning</li>
+            <li>RC low-pass filter (3.4 Hz cutoff) to isolate PPG signal band from noise</li>
+            <li>Authored full hardware engineering document: requirements, component rationale, test plan</li>
+          </ul>
+        </div>
+        <div class="project-visual">
+          <div class="circuit-visual">
+            <svg class="ppg-wave" viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline
+                points="0,40 30,40 35,38 40,20 45,5 50,15 55,35 60,40 90,40 95,38 100,20 105,5 110,15 115,35 120,40 150,40 155,38 160,20 165,5 170,15 175,35 180,40 210,40 215,38 220,20 225,5 230,15 235,35 240,40 270,40 275,38 280,20 285,5 290,15 295,35 300,40"
+                stroke="#7A9E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+              <polyline
+                points="0,40 30,40 35,39 40,32 45,26 50,30 55,37 60,40 90,40 95,39 100,32 105,26 110,30 115,37 120,40 150,40 155,39 160,32 165,26 170,30 175,37 180,40 210,40 215,39 220,32 225,26 230,30 235,37 240,40 270,40 275,39 280,32 285,26 290,30 295,37 300,40"
+                stroke="#B8D4BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"
+                stroke-dasharray="4 3" />
+              <text x="8" y="55" font-size="8" fill="#9AA697" font-family="DM Sans, sans-serif">raw signal</text>
+              <text x="180" y="55" font-size="8" fill="#9AA697" font-family="DM Sans, sans-serif">filtered</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAD Projects -->
+      <div class="project-card reveal">
+        <h3 class="project-title">Functional CAD Designs</h3>
+        <p class="project-desc">A series of constraint-driven 3D printed designs iterated for fit, tolerance, and
+          function — including a multi-body interlocking assembly toleranced for FDM printing.</p>
+        <div class="project-skills">
+          <span class="skill-tag">Fusion 360</span>
+          <span class="skill-tag">Onshape</span>
+          <span class="skill-tag">FDM Printing</span>
+          <span class="skill-tag">Tolerancing</span>
+          <span class="skill-tag">Resin Printing</span>
+        </div>
+        <ul class="project-highlights">
+          <li>Multi-part pokeball assembly with mating snap-fit components</li>
+          <li>Yarn bowl with functional slot geometry designed to prevent snagging</li>
+          <li>Iterated prints to refine fit and wall thickness</li>
+        </ul>
+      </div>
+
+      <!-- PreservaBio -->
+      <div class="project-card reveal">
+        <h3 class="project-title">Auto-Cartridge Mechanism</h3>
+        <p class="project-desc">At PreservaBio, designed a mechanism to accurately meter and deliver 50 µg of insulin
+          into a medical device — from patent review through manufacturable CAD prototype.</p>
+        <div class="project-skills">
+          <span class="skill-tag">Onshape</span>
+          <span class="skill-tag">Medical Device Design</span>
+          <span class="skill-tag">Patent Review</span>
+          <span class="skill-tag">Prototyping</span>
+        </div>
+        <ul class="project-highlights">
+          <li>Reviewed 30+ scientific articles and patents to define development workflow</li>
+          <li>Designed and iterated manufacturable prototypes in Onshape</li>
+          <li>Drove technical decision-making for downstream production</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <div class="section-header reveal">
+      <span class="section-label">Resume</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="resume-layout">
+      <div>
+        <div class="resume-section reveal">
+          <div class="resume-section-title">Experience</div>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Engineering Intern</span>
+              <span class="resume-item-date">Jun 2025 – Present</span>
+            </div>
+            <div class="resume-item-org">PreservaBio · San Diego, CA</div>
+            <div class="resume-item-desc">Designed auto-cartridge mechanism for precise insulin delivery. Reviewed 30+
+              patents and articles to define development workflow. Iterated manufacturable prototypes in Onshape.</div>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Research Intern</span>
+              <span class="resume-item-date">Apr 2024 – Apr 2025</span>
+            </div>
+            <div class="resume-item-org">Callaway Laboratory, Salk Institute · San Diego, CA</div>
+            <div class="resume-item-desc">Performed cell preparation, brain sectioning, and IHC. Developed
+              high-throughput RNA-seq data processing workflows including dimensionality reduction (UMAP).</div>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Instructional Assistant</span>
+              <span class="resume-item-date">Sep 2023 – Present</span>
+            </div>
+            <div class="resume-item-org">Differential Equations, UCSD</div>
+            <div class="resume-item-desc">Developed 50+ grading rubrics. Evaluated 1,800+ problem sets for 200+ students
+              per quarter with detailed technical feedback.</div>
+          </div>
+        </div>
+
+        <div class="resume-section reveal">
+          <div class="resume-section-title">Education</div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">B.S. Bioengineering: Biotechnology</span>
+              <span class="resume-item-date">2022 – 2026</span>
+            </div>
+            <div class="resume-item-org">UC San Diego · GPA 3.7 · Provost Honors</div>
+            <div class="resume-item-desc">Circuits & Signal Processing, Fluid Mechanics, Thermodynamics, Mass Transfer,
+              Statistics, Cell & Protein Engineering</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="resume-section reveal">
+          <div class="resume-section-title">Technical Skills</div>
+          <div class="skills-grid">
+            <div>
+              <div class="skill-group-title">CAD</div>
+              <div class="skill-list">Fusion 360<br>Onshape<br>EasyEDA</div>
+            </div>
+            <div>
+              <div class="skill-group-title">Fabrication</div>
+              <div class="skill-list">CNC / Laser Cutting<br>3D Printing (FDM, Resin)<br>Soldering</div>
+            </div>
+            <div>
+              <div class="skill-group-title">Software</div>
+              <div class="skill-list">Python<br>MATLAB<br>R / RStudio<br>ImageJ</div>
+            </div>
+            <div>
+              <div class="skill-group-title">Lab</div>
+              <div class="skill-list">IHC<br>RNA-seq / UMAP<br>Brain Sectioning<br>Cell Prep</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-section reveal">
+          <div class="resume-section-title">Leadership</div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Chair, WAPI Program</span>
+              <span class="resume-item-date">Jan – Jun 2025</span>
+            </div>
+            <div class="resume-item-org">Alpha Phi Omega</div>
+            <div class="resume-item-desc">Coordinated 50+ participants to manufacture 1,000+ Water Pasteurization
+              Indicators. Distributed to communities with limited access to clean water.</div>
+          </div>
+        </div>
+
+        <div class="resume-download reveal">
+          <a href="assets/Aurora_Dair_Resume.pdf" class="btn btn-primary" download>Download Resume PDF</a>
+          <span style="font-size:13px; color: var(--light);">Updated March 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="contact-eyebrow">Contact</p>
+      <h2 class="contact-title">Let's build<br><em>something.</em></h2>
+      <p class="contact-desc">Open to entry-level mechanical and hardware engineering roles in medical devices and
+        adjacent industries. Based in San Diego.</p>
+      <div class="contact-links">
+        <a href="mailto:auroraodair@gmail.com" class="contact-link">
+          <div class="contact-link-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </div>
+          auroraodair@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/aurora-dair" target="_blank" class="contact-link">
+          <div class="contact-link-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </div>
+          linkedin.com/in/aurora-dair
+        </a>
+        <a href="tel:3104390294" class="contact-link">
+          <div class="contact-link-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </div>
+          (310) 439-0294
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
